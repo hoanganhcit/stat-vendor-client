@@ -28,329 +28,342 @@
     <link href="css/owl.carousel.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        @media screen and (max-width:1920px) {
-            .wrapper-content {
-                position: relative;
-                max-width: 500px;
-                margin: 0 auto;
-            }
-
-            .slides-content {
-                position: relative;
-                overflow: hidden;
-                min-height: 100vh;
-            }
-
-            .client-vendor {
-                position: relative;
-                height: 100vh;
-            }
-
-            .slide-01 {
-                background: #fff;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding-top: 90px;
-            }
-
-            .client-logo {
-                display: block;
-            }
-
-            .client-logo img {
-                width: 150px !important;
-            }
-
-            .client-body-content {
-                width: 100%;
-                display: block;
-                padding: 15px;
-            }
-
-            .slide-1-img-bottom {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-            }
-
-            .p-slide-1 {
-                font-size: 32px;
-                font-weight: bold;
-                color: #F8A84B;
-            }
-            .owl-dots {
-                position: absolute;
-                z-index: 1;
-                top: 50%;
-                transform: rotate(90deg);
-                right: -50px;
-            }
-
-            .owl-dots .owl-dot span {
-                display: inline-block;
-                width: 10px;
-                height: 10px;
-                background: none;
-                border-radius: 10px;
-                border: 1px solid #e7e7e7;
-                margin: 3px;
-            }
-
-            .owl-dots .owl-dot.active span {
-                background: #f8a84b;
-                border-color: #f8a84b;
-            }
-            .client-02 {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background: #F8A84B;
-            }
-
-            .p-slide-2 {
-                font-size: 32px;
-                font-weight: bold;
-            }
-
-            .text-white {
-                color: #fff;
-            }
-            .slide-2-img-top {
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 300px;
-            }
-
-            .slide-2-img-bottom {
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                right: 0;
-            }
-
-            .client-03 {
-                display: flex;
-                align-items: flex-start;
-                justify-content: center;
-                background: linear-gradient(0deg, #fff, #FFF5ED);
-                padding-top: 200px;
-            }
-
-            .slide-3-img-bottom {
-                position: absolute;
-                bottom: 0;
-                right: 0;
-            }
-
-            .p-slide-3 {
-                font-size: 32px;
-                font-weight: bold;
-                color: #F8A84B;
-            }
-
-            span.ordered-number {
-                font-size: 50px;
-                font-weight: bold;
-                color: black;
-            }
-            .client-04 {
-                display: flex;
-                align-items: flex-start;
-                justify-content: center;
-                background: linear-gradient(45deg, #fff, #EEF2FA);
-                padding-top: 200px;
-            }
-
-            .slide-4-img-bottom {
-                position: absolute;
-                bottom: 0;
-                right: 0;
-            }
-
-            .p-slide-4 {
-                font-size: 32px;
-                font-weight: bold;
-                color: #F8A84B;
-            }
-            span.p-slide-sm {
-                font-size: 18px;
-                color: black;
-            }
-            .logo-right-bottom {
-                position: absolute;
-                right: 0;
-                bottom: 0;
-                width: 100px;
-            }
-            .logo-center-bottom {
-                position: absolute;
-                bottom: 50px;
-                width: 100px;
-                left: calc(50% - 50px);
-            }
-
-            .client-05 {
-                padding-top: 100px;
-                padding-bottom: 150px;
-            }
-
-            .p-slide-5 {
-                font-size: 23px;
-                font-weight: bold;
-                color: #F8A84B;
-            }
-
-            .top-vendors {
-                margin-top: 50px;
-                position: relative;
-                padding: 0 15px;
-                display: flex;
-                justify-content: space-around;
-                align-items: flex-end;
-            }
-
-            .vendor-bar {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                position: relative;
-                width: 100px;
-            }
-
-            .bar-col {
-                width: 100%;
-                text-align: center;
-                margin-bottom: 15px;
-                position: relative;
-                background: linear-gradient(180deg, rgba(211,219,240,1) 0%, rgba(245,245,245,1) 100%);
-                border-radius: 25px;
-                display: flex;
-                align-items: flex-end;
-                justify-content: center;
-                padding-bottom: 15px;
-            }
-
-            .bar-col.bar-1 {
-                height: 400px;
-                background: linear-gradient(180deg, rgba(245, 213, 187, 1) 0%, rgb(245 213 187 / 10%) 100%);
-            }
-            .bar-col.bar-2 {
-                height: 300px;
-            }
-            .bar-col.bar-3 {
-                height: 200px;
-            }
-
-            .qty-ordered, .total-price {
-                font-size: 20px;
-                font-weight: bold;
-            }
-
-            .logo-vendor {
-                margin-top: 30px;
-                display: block;
-            }
-
-            .logo-vendor img {
-                width: 60px !important;
-                border-radius: 100%;
-                height: 60px !important;
-                border: 1px solid;
-            }
-            .client-06 {
-                padding-top: 100px;
-                padding-bottom: 150px;
-                background: linear-gradient(0deg, rgba(252,242,234,1) 0%, rgba(255,255,255,1) 100%);
-            }
-
-            .top-cuisines {
-                margin-top: 30px;
-                position: relative;
-            }
-
-            .cuisines-bar {
-                position: relative;
-                margin-left: -15px;
-                width: 100%;
-                background: #D3DBF0;
-                margin-bottom: 30px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding-left: 50px;
-                padding-right: 15px;
-                min-height: 100px;
-                border-radius: 0 40px 40px 0;
-                max-width: 80%;
-            }
-
-            .cuisines-bar .logo-vendor {
-                margin: 0;
-            }
-
-            .cuisines-bar .logo-vendor img {
-                border: 0;
-            }
-            .name-cuisines {
-                font-size: 20px;
-                font-weight: bold;
-            }
-
-            .cuisines-1 span.text-primary {
-                color: #F8A84B;
-            }
-
-            .cuisines-1 span.name-cuisines {
-                font-size: 30px;
-            }
-
-            .cuisines-bar.cuisines-1 {
-                height: 130px;
-                background: #F5D5BB;
-                max-width: 100%;
-            }
-            .client-07 {
-                padding: 100px 0;
-            }
-
-            .menu-content {
-                display: flex;
-                flex-direction: column;
-                background: #FFF5ED;
-                border-radius: 40px;
-                padding: 50px;
-                text-align: center;
-                margin-top: 30px;
-            }
-
-            .menu-item {
-                display: block;
-                margin-bottom: 30px;
-            }
-
-            .menu-title {
-                font-size: 17px;
-                font-weight: bold;
-                display: block;
-                margin-bottom: 5px;
-            }
-
-            .menu-vendor {
-                display: block;
-                margin-bottom: 10px;
-                font-size: 15px;
-                font-style: italic;
-                font-weight: 500;
-                color: #809DE8;
-            }
+        .wrapper-content {
+            position: relative;
+            max-width: 450px;
+            margin: 0 auto;
         }
-        .client-vendor.client-08 {
-            background: linear-gradient(180deg, rgba(255,255,255,1) 35%, rgba(224,227,240,1) 100%);
+
+        .slides-content {
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+        }
+
+        .client-vendor {
+            position: relative;
+            height: 100vh;
+        }
+
+        .slide-01 {
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 90px;
+        }
+
+        .client-logo {
+            display: block;
+        }
+
+        .client-logo img {
+            width: 150px !important;
+        }
+
+        .client-body-content {
+            width: 100%;
+            display: block;
+            padding: 15px;
+        }
+
+        .slide-1-img-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .p-slide-1 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #F8A84B;
+        }
+
+        .owl-dots {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            transform: rotate(90deg);
+            right: -50px;
+        }
+
+        .owl-dots .owl-dot span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: none;
+            border-radius: 10px;
+            border: 1px solid #e7e7e7;
+            margin: 3px;
+        }
+
+        .owl-dots .owl-dot.active span {
+            background: #f8a84b;
+            border-color: #f8a84b;
+        }
+
+        .client-02 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #F8A84B;
+        }
+
+        .p-slide-2 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .text-white {
+            color: #fff;
+        }
+
+        .slide-2-img-top {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+        }
+
+        .slide-2-img-bottom {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .client-03 {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            background: linear-gradient(0deg, #fff, #FFF5ED);
+            padding-top: 200px;
+        }
+
+        .slide-3-img-bottom {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .p-slide-3 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #F8A84B;
+        }
+
+        span.ordered-number {
+            font-size: 50px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .client-04 {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            background: linear-gradient(45deg, #fff, #EEF2FA);
+            padding-top: 200px;
+        }
+
+        .slide-4-img-bottom {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .p-slide-4 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #F8A84B;
+        }
+
+        span.p-slide-sm {
+            font-size: 18px;
+            color: black;
+        }
+
+        .logo-right-bottom {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100px;
+        }
+
+        .logo-center-bottom {
+            position: absolute;
+            bottom: 50px;
+            width: 100px;
+            left: calc(50% - 50px);
+        }
+
+        .client-05 {
+            padding-top: 100px;
+            padding-bottom: 150px;
+        }
+
+        .p-slide-5 {
+            font-size: 23px;
+            font-weight: bold;
+            color: #F8A84B;
+        }
+
+        .top-vendors {
+            margin-top: 50px;
+            position: relative;
+            padding: 0 15px;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+
+        .vendor-bar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            width: 100px;
+        }
+
+        .bar-col {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+            position: relative;
+            background: linear-gradient(180deg, rgba(211, 219, 240, 1) 0%, rgba(245, 245, 245, 1) 100%);
+            border-radius: 25px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 15px;
+        }
+
+        .bar-col.bar-1 {
+            height: 400px;
+            background: linear-gradient(180deg, rgba(245, 213, 187, 1) 0%, rgb(245 213 187 / 10%) 100%);
+        }
+
+        .bar-col.bar-2 {
+            height: 300px;
+        }
+
+        .bar-col.bar-3 {
+            height: 200px;
+        }
+
+        .qty-ordered,
+        .total-price {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .logo-vendor {
+            margin-top: 30px;
+            display: block;
+        }
+
+        .logo-vendor img {
+            width: 60px !important;
+            border-radius: 100%;
+            height: 60px !important;
+            border: 1px solid;
+        }
+
+        .client-06 {
+            padding-top: 100px;
+            padding-bottom: 150px;
+            background: linear-gradient(0deg, rgba(252, 242, 234, 1) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+
+        .top-cuisines {
+            margin-top: 30px;
+            position: relative;
+        }
+
+        .cuisines-bar {
+            position: relative;
+            margin-left: -15px;
+            width: 100%;
+            background: #D3DBF0;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 50px;
+            padding-right: 15px;
+            min-height: 100px;
+            border-radius: 0 40px 40px 0;
+            max-width: 80%;
+        }
+
+        .cuisines-bar .logo-vendor {
+            margin: 0;
+        }
+
+        .cuisines-bar .logo-vendor img {
+            border: 0;
+        }
+
+        .name-cuisines {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .cuisines-1 span.text-primary {
+            color: #F8A84B;
+        }
+
+        .cuisines-1 span.name-cuisines {
+            font-size: 30px;
+        }
+
+        .cuisines-bar.cuisines-1 {
+            height: 130px;
+            background: #F5D5BB;
+            max-width: 100%;
+        }
+
+        .client-07 {
             padding: 100px 0;
         }
+
+        .menu-content {
+            display: flex;
+            flex-direction: column;
+            background: #FFF5ED;
+            border-radius: 40px;
+            padding: 50px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .menu-item {
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        .menu-title {
+            font-size: 17px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .menu-vendor {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 15px;
+            font-style: italic;
+            font-weight: 500;
+            color: #809DE8;
+        }
+
+        .client-vendor.client-08 {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 1) 35%, rgba(224, 227, 240, 1) 100%);
+            padding: 100px 0;
+        }
+
         .client-09 {
             display: flex;
             align-items: center;
@@ -387,53 +400,73 @@
             font-weight: bold;
             margin-bottom: 30px;
         }
+
         @media screen and (max-height: 845px) {
-            .p-slide-1, .p-slide-2, .p-slide-3, .p-slide-4 {
+
+            .p-slide-1,
+            .p-slide-2,
+            .p-slide-3,
+            .p-slide-4 {
                 font-size: 28px;
             }
-            
+
 
             span.ordered-number {
                 font-size: 40px;
             }
+
             .bar-col.bar-1 {
                 height: 300px;
             }
+
             .bar-col.bar-2 {
                 height: 200px;
             }
+
             .bar-col.bar-3 {
                 height: 120px;
             }
+
             .client-07 {
                 padding-top: 30px;
             }
         }
+
         @media screen and (max-height: 750px) {
-            .p-slide-1, .p-slide-2, .p-slide-3, .p-slide-4 {
+
+            .p-slide-1,
+            .p-slide-2,
+            .p-slide-3,
+            .p-slide-4 {
                 font-size: 25px;
             }
-            
+
 
             span.ordered-number {
                 font-size: 33px;
             }
+
             .bar-col.bar-1 {
                 height: 300px;
                 width: 90px;
             }
+
             .bar-col.bar-2 {
                 height: 200px;
                 width: 90px;
             }
+
             .bar-col.bar-3 {
                 height: 120px;
                 width: 90px;
             }
+
             .client-07 {
                 padding-top: 30px;
             }
-            .qty-ordered, .total-price {
+
+            .qty-ordered,
+            .total-price {
                 font-size: 16px;
             }
 
@@ -494,9 +527,10 @@
                         </div>
                         <div class="client-body-content justify-center">
                             <div class="text-center">
-                                <div class="p-slide-2 text-white"> Here is a recap of your caterings with us from this year... </div>
+                                <div class="p-slide-2 text-white"> Here is a recap of your caterings with us from this
+                                    year... </div>
                             </div>
-                        </div> 
+                        </div>
                         <div class="slide-2-img-bottom">
                             <img src="img/slide2-bottom.png" alt="">
                         </div>
@@ -506,9 +540,10 @@
                     <div class="client-vendor client-03">
                         <div class="client-body-content justify-center">
                             <div class="text-center">
-                                <div class="p-slide-3"> You ordered with us <br><span class="ordered-number">34</span> times in 2024</div>
+                                <div class="p-slide-3"> You ordered with us <br><span class="ordered-number">34</span>
+                                    times in 2024</div>
                             </div>
-                        </div> 
+                        </div>
                         <div class="slide-3-img-bottom">
                             <img src="img/slide3-bottom.png" alt="">
                         </div>
@@ -521,9 +556,11 @@
                     <div class="client-vendor client-04">
                         <div class="client-body-content justify-center">
                             <div class="text-center">
-                                <div class="p-slide-4"> We catered a total of  <br><span class="ordered-number">xxx</span><br> meals to you this year <br> <span class="p-slide-sm">That’s enough to feed  XYZ!</span></div>
+                                <div class="p-slide-4"> We catered a total of <br><span
+                                        class="ordered-number">xxx</span><br> meals to you this year <br> <span
+                                        class="p-slide-sm">That’s enough to feed XYZ!</span></div>
                             </div>
-                        </div> 
+                        </div>
                         <div class="slide-4-img-bottom">
                             <img src="img/slide4-bottom.png" alt="">
                         </div>
@@ -567,7 +604,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                         <div class="logo-center-bottom">
                             <img src="img/logo.png" alt="" width="100">
                         </div>
@@ -605,7 +642,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                         <div class="logo-right-bottom">
                             <img src="img/logo.png" alt="" width="100">
                         </div>
@@ -615,7 +652,8 @@
                     <div class="client-vendor client-07">
                         <div class="client-body-content justify-center">
                             <div class="text-center">
-                                <div class="p-slide-5"> Based on our calculations....<br><br>This is your personalized<br> perfect menu!</div>
+                                <div class="p-slide-5"> Based on our calculations....<br><br>This is your
+                                    personalized<br> perfect menu!</div>
                             </div>
                             <div class="menu-content">
                                 <div class="menu-item">
@@ -640,7 +678,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                         <div class="logo-right-bottom">
                             <img src="img/logo.png" alt="" width="100">
                         </div>
@@ -653,11 +691,29 @@
                                 <div class="p-slide-5"> For 2025, we think you<br> will like...</div>
                             </div>
                             <div class="menu-content">
-                                <div class="menu-like-item"></div>
-                                <div class="menu-like-item"></div>
-                                <div class="menu-like-item"></div>
+                                <div class="menu-item">
+                                    <div class="menu-title">Bread & Salt</div>
+                                    <div class="menu-vendor">Halal Verified</div>
+                                    <div class="menu-desc">
+                                        <p>Delicious, diverse, and expertly selected.</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-title">Bread & Salt</div>
+                                    <div class="menu-vendor">Halal Verified</div>
+                                    <div class="menu-desc">
+                                        <p>Delicious, diverse, and expertly selected.</p>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                    <div class="menu-title">Bread & Salt</div>
+                                    <div class="menu-vendor">Halal Verified</div>
+                                    <div class="menu-desc">
+                                        <p>Delicious, diverse, and expertly selected.</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div> 
+                        </div>
                         <div class="logo-right-bottom">
                             <img src="img/logo.png" alt="" width="100">
                         </div>
@@ -669,11 +725,11 @@
                             <div class="thankyou">
                                 <div class="tks-content">
                                     <p class="p-tks">Thank you for <br>being our client!</p>
-                                    <p>We can’t wait to bring more <br>EPIC meals to you in 2025! 
-                                        </p>
+                                    <p>We can’t wait to bring more <br>EPIC meals to you in 2025!
+                                    </p>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                         <div class="logo-center-bottom">
                             <img src="img/logo.png" alt="" width="100">
                         </div>
@@ -689,10 +745,10 @@
     <script src="js/owl.carousel.min.js"></script>
     <script>
         $('.client-owl-carousel').owlCarousel({
-            loop:false,
-            margin:0,
-            nav:false,
-            items:1
+            loop: false,
+            margin: 0,
+            nav: false,
+            items: 1
         })
     </script>
 </body>
